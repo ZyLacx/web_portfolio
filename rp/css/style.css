@@ -1,0 +1,376 @@
+/* Fonts in CSS:
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Oleo Script', cursive;
+        font-family: 'Oleo Script Swash Caps', cursive;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Varela Round', sans-serif; */
+@keyframes fakty {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes sipka {
+  0% { width: 0px; }
+  25% { width: 120px; }
+  75% { width: 120px; opacity: 1; }
+  100% {opacity: 0;}
+
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1e1e1e;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+h3 {
+  margin-top: 2px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0;
+}
+
+
+footer {
+  font-size: 85%;
+  font-family: Verdana, sans-serif;
+  padding-left: 20px;
+  color: #4e4e4e;
+  background-color: #333;
+  clear: right;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.background {
+  position: fixed;
+  width: 1920px;
+  height: 1080px;
+  z-index: -1;
+  bottom: 150px;
+  background-image: url(../img/bg.png);
+}
+
+.title {
+  font-family: 'Oleo Script';
+  font-size: 95px;
+  color: #333333;
+  padding-left: 30px;
+  margin: none;
+  animation: fakty 1.5s ease;
+}
+
+.mainmenu {
+  text-align: center;
+}
+
+.mainlink {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #0092BE;
+  display: block;
+  margin: auto;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 3.5em;
+  background-color: #333;
+}
+
+.mainlink:hover {
+  text-decoration: none;
+  color: #0078ff;
+  text-decoration: none;
+  cursor: pointer;
+  border-color: #0078ff;
+  transition: .6s;
+}
+
+.mainlink::after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #282828;
+  transition: .7s ease;
+}
+
+.mainlink:hover::after {
+  width: 65%;
+}
+
+.mainlink2::after {
+  width: 0;
+  height: 5px;
+}
+
+.grid-container {
+  margin-top: 95px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #333;
+}
+
+.grid-item {
+  background-color: #282828;
+  padding: 1px;
+  font-size: 100%;
+  text-align: center;
+}
+
+.link{
+  font-family: "Raleway";
+  font-size: 22px;
+  color: #999999;
+}
+
+.link:hover {
+  transition: .7s ease;
+  color: #1e3ebf;
+  background-color: rgb(40, 40, 40);
+}
+
+.header {
+  background-image: url(../img/trianglify.png);
+  background-size: 100% 100%;
+  font-family: 'Oleo Script';
+  font-size: 100px;
+  color: #333333;
+  padding-left: 30px;
+}
+
+.leftdiv {
+  font-size: 50px;
+  text-align: center;
+  height: 300px;
+  font-family: "Raleway";
+  display: table;
+  width: 100%;
+  border-bottom: solid 5px transparent; 
+  border-image: url(../img/border.png) 55 stretch;
+}
+
+.alignleft {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 80px;
+  padding-right: 50px;
+  font-size: 2.5vw;
+}
+
+.alignright {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 80px;
+  padding-left: 50px;
+  font-size: 2.5vw;
+}
+
+.rightdiv {
+  position: relative;
+  border-bottom: solid 5px transparent; 
+  border-image: url(../img/border.png) 55 stretch;
+  font-size: 50px;
+  text-align: center;
+  height: 300px;
+  font-family: 'Raleway';
+  display: table;
+  width: 100%;
+}
+
+
+
+.none {
+  color: #333333;
+  text-decoration: none;
+}
+
+.imgright {
+  margin-top: 50px;
+  margin-right: 130px;
+  float: right;
+  max-width: 300px;
+  max-height: 200px;
+  border: solid 5px #333;
+  border-radius: 15px;
+
+}
+
+.imgleft {
+  margin-top:50px; 
+  margin-left: 130px;
+  float: left;
+  max-width: 300px;
+  max-height: 200px;
+  border: solid 5px #333;
+  border-radius: 15px;
+}
+
+.mapadiv{
+  float: left;
+  left: 300px;
+  margin-left: 130px;
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.mapa {
+  position: absolute;
+  width: 95%;
+  height: 93%;
+  border: solid 5px #333;
+  border-radius: 15px;
+  left: 0px;
+}
+
+
+.maparesize {
+  height: 200px;
+  position: relative;
+  resize: both;
+  overflow: scroll;
+}
+
+.thumbnail{
+position: relative;
+z-index: 50;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+z-index: 0;
+}
+
+/*
+.thumbnail #ImgToDisplay{
+  transition: height 0.7s ease, width 0.7s ease, visibility 1s;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 130px;
+  top: 50px;
+  visibility: hidden;
+  border: solid 5px #333;
+  border-radius: 15px;
+}
+
+.thumbnail:hover #ImgToDisplay{
+  width: 900px;
+  height: 600px;
+  visibility: visible;
+  border: solid 5px #333;
+  border-radius: 15px;
+}
+*/
+.cstmscroll::-webkit-scrollbar{
+  width: 15px;
+}
+
+.cstmscroll::-webkit-scrollbar-thumb{
+  background: none;
+  outline: 0;
+  border-radius: 50px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: auto;
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    left: 20%; 
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .background {
+    position: fixed;
+    max-width: 1920px;
+    z-index: -1;
+    bottom: 45px;
+    left: -400px;
+    background-image: url(../img/bg.jpg); 
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .imgleft, .imgright {
+    width: 25vw;
+    height: auto;
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mapadiv {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rightdiv, .leftdiv {
+    height: 30vw;
+  }
+}
+
+table {
+  margin-top: 40px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 47vw;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  color: #bdbfcc;
+}
+
+tr:nth-child(even) {
+  color: #2c2d30;
+  background-color: #dddddd;
+}
