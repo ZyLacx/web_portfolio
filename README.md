@@ -16,6 +16,7 @@ I tried to create my own system for uploading files, creating posts and gallerie
 One of the first websites that I made on my own.
 I created it for an assignment for the annual project that I made during the whole school year
 
-When I was younger I was fascinated that there are so many things in the world and my knowledge is extremely tiny compared to all the "facts" that are out there.
+For some reason I always wanted to make a site that will give you random "facts". I made 2 mock ups ([single page with button](https://zylacx.github.io/web_portfolio/rp/Web.jpg) and [one that's similar to the website](https://zylacx.github.io/web_portfolio/rp/image/Web2.jpg))for my graphic lectures and later decided it would make a great project as a website.
+I didn't fact check any content back then so don't trust everything you see :).
 
 Originally I planned on adding much more stuff to the site but school got in the way and I left it in the state I submitted it in.
