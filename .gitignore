@@ -1,1 +1,4 @@
-maturita
+maturita/.vscode
+maturita/files/*
+maturita/editor/articles.db
+maturita/editor/gallery.db

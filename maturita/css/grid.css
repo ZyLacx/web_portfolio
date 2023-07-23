@@ -1,0 +1,133 @@
+.grid {
+    position: relative;
+    margin: 50px 0;
+}
+
+.item {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin: 10px 8px 5px;
+    z-index: 1;
+    color: black;
+}
+.item.muuri-item-dragging {
+    z-index: 3;
+}
+.item.muuri-item-releasing {
+    z-index: 2; 
+}
+.item.muuri-item-hidden {
+    z-index: 0;
+}
+.item-content {
+    position: relative;
+    text-align: center;
+}
+
+.item-content img {
+    width: 250px;
+    height: 200px;    
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.no-drag:hover img {
+    transform: scale(0.95);
+}
+
+.item-content div {
+    height: 150px;
+    overflow: hidden;
+}
+
+#add-item {
+    cursor: pointer !important;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    z-index: 1;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid #1abc9c 4px;
+    font-size: 2.5em;
+    color: cornflowerblue;
+}
+
+#add-item:hover a {
+    border-color: cadetblue;
+    color: cornflowerblue;
+}
+
+.draggable{
+    cursor: grab;
+}
+
+.no-drag {
+    cursor: default;
+}
+.no-drag a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.no-drag:hover a {
+    color: #1abc9c;
+}
+
+.draggable p {
+    font-style: italic;
+    cursor: text;
+}
+
+.remove-gallery {
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #777;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.gallery-back {
+    display: inline-block;
+    color: aliceblue;
+    background-color: skyblue;
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 680px){
+    .grid:nth-child(odd){
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 545px){
+    .grid:nth-child(odd){
+        margin-left: 15%;
+    }
+}
