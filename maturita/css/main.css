@@ -90,7 +90,7 @@ header {
 }
 
 .header-bg {
-    background-image: url("../files/banner-blurred.png");
+    background-image: url("../files/banner-blurred.webp");
     background-position: center;
     background-size: cover;
     height: 100%;

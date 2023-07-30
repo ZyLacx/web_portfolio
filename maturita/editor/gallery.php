@@ -41,7 +41,7 @@ echo "</div><div class='content-div'>";
             for ($i = 0; $i < count($result); $i++){
                 echo "<div class='item no-drag' id='$i'>
                         <div class='item-content'>
-                            <img id='{$result[$i][0]}' src='../files/img/thumbnails/{$result[$i][0]}'>
+                            <img id='{$result[$i][0]}' src='../files/img/{$result[$i][0]}'>
                         </div>
                     </div>";
             }
@@ -83,7 +83,7 @@ echo "</div><div class='content-div'>";
                 echo "<div class='item no-drag' id='".$data["id"]."'>
                         <div class='item-content'>
                             <a id='gallery_".$data["id"]."' href='?id=".$data["id"]."'>
-                                <img id='".$data["img"]."' src='../files/img/thumbnails/".$data["img"]."'>
+                                <img id='".$data["img"]."' src='../files/img/".$data["img"]."'>
                                 <p>".$data["title"]."</p>
                             </a>
                         </div>
@@ -167,11 +167,11 @@ function selectImage(image, gallery = false, times = 1){
         item_div.className = "item draggable";
         if(gallery){        
             max_id++;
-            $('<div class="item-content"><img id='+image+' src="../files/img/thumbnails/'+image+'"></div><div class="remove-gallery" onclick="removeGallery('+max_id+', true)"><i class="fas fa-times"></i></div>').appendTo(item_div);
+            $('<div class="item-content"><img id='+image+' src="../files/img/'+image+'"></div><div class="remove-gallery" onclick="removeGallery('+max_id+', true)"><i class="fas fa-times"></i></div>').appendTo(item_div);
             item_div.id = max_id;
         }
         else{
-            $('<div class="item-content"><img id='+image+' src="../files/img/thumbnails/'+image+'"><p contenteditable="true">Nová galéria</p></div><div class="remove-gallery" onclick="removeGallery('+max_id+')"><i class="fas fa-times"></i></div>').appendTo(item_div);
+            $('<div class="item-content"><img id='+image+' src="../files/img/'+image+'"><p contenteditable="true">Nová galéria</p></div><div class="remove-gallery" onclick="removeGallery('+max_id+')"><i class="fas fa-times"></i></div>').appendTo(item_div);
             item_div.id = max_id;
         }
         
@@ -186,11 +186,11 @@ function selectImage(image, gallery = false, times = 1){
             item_div.className = "item draggable";
             if(gallery){        
                 max_id++;
-                $('<div class="item-content"><img id='+imageName+' src="../files/img/thumbnails/'+imageName+'"></div><div class="remove-gallery" onclick="removeGallery('+max_id+', true)"><i class="fas fa-times"></i></div>').appendTo(item_div);
+                $('<div class="item-content"><img id='+imageName+' src="../files/img/'+imageName+'"></div><div class="remove-gallery" onclick="removeGallery('+max_id+', true)"><i class="fas fa-times"></i></div>').appendTo(item_div);
                 item_div.id = max_id;
             }
             else{
-                $('<div class="item-content"><img id='+imageName+' src="../files/img/thumbnails/'+imageName+'"><p contenteditable="true">Nová galéria</p></div><div class="remove-gallery" onclick="removeGallery('+max_id+')"><i class="fas fa-times"></i></div>').appendTo(item_div);
+                $('<div class="item-content"><img id='+imageName+' src="../files/img/'+imageName+'"><p contenteditable="true">Nová galéria</p></div><div class="remove-gallery" onclick="removeGallery('+max_id+')"><i class="fas fa-times"></i></div>').appendTo(item_div);
                 item_div.id = max_id;
             }
             

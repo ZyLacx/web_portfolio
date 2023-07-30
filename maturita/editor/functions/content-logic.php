@@ -79,13 +79,7 @@ if(isset($_POST["numberOfElements"]) && $_POST["numberOfElements"]!==$_SESSION["
 
 function deleteMedia($type, $path){
     foreach ($_POST["names"] as $media){
-        if(strpos($type, "video") === false){
-            unlink("../files/$type/" . $media);
-            unlink("../files/$type/thumbnails/" . $media);
-        }
-        else{
-            unlink("../files/$type/" . $media);
-        }
+        unlink("../files/$type/" . $media);
     }
     header("Location: $path");
     exit();
@@ -108,8 +102,8 @@ function moveMedia($type, $path){
             $defaultPath = "../files/$type/" . $media;
             $trashPath = "../files/trash/$type/" . $media;
             rename($defaultPath, $trashPath);
-            $defaultPath = "../files/$type/thumbnails/" . $media;
-            $trashPath = "../files/trash/$type/thumbnails/" . $media;
+            $defaultPath = "../files/$type/" . $media;
+            $trashPath = "../files/trash/$type/" . $media;
             rename($defaultPath, $trashPath);
         }
         else{
@@ -197,8 +191,8 @@ function recoverMedia($type, $path){
             $trashPath = "../files/trash/img/" . $media;
             $defaultPath = "../files/img/" . $media;
             rename($trashPath, $defaultPath);
-            $trashPath = "../files/trash/img/thumbnails/" . $media;
-            $defaultPath = "../files/img/thumbnails/" . $media;
+            $trashPath = "../files/trash/img/" . $media;
+            $defaultPath = "../files/img/" . $media;
             rename($trashPath, $defaultPath);
         }
         else{

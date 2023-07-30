@@ -14,7 +14,7 @@ if(!defined("AllowAccess")){
 <br>
 <h3>Náš tím</h3>
 <div class="team">
-    <img src="files/mladez.png" style="width: 70%;" alt="">
+    <img src="files/mladez.webp" style="width: 70%;" alt="">
     <div style="display: flex;">
     <div style="flex: 1; text-align: center; font-family: 'Open Sans', sans-serif;">
     <p style="font-size: 30px; font-weight: normal; margin-top: 15px">M.</p>
@@ -28,21 +28,21 @@ if(!defined("AllowAccess")){
     <div style="display: flex;" class="two-cols">
         <div style="flex: 1;">
             <div style="text-align: center; font-family: 'Open Sans', sans-serif;">
-                <img src="files/img/me1.jpg"/>
+                <img src="files/img/me1.webp"/>
                 <p style="font-size: 30px; font-weight: normal; margin-top: 15px">A.</p>
                 <p style="font-size: 18px;">forenzný chemik a tréner detí</p>
             </div>
         </div>
         <div style="flex: 1;">
             <div style="text-align: center; font-family: 'Open Sans', sans-serif;">
-                <img src="files/img/me2.jpg"/>
+                <img src="files/img/me2.webp"/>
                 <p style="font-size: 30px; font-weight: normal; margin-top: 15px">L.</p>
                 <p style="font-size: 18px;">maturantka a trénerka detí</p>
             </div>
         </div>
     </div>
     <div style="text-align: center; font-family: 'Lato', sans-serif;">
-        <img src="files/pes.jpeg" alt="" style="width: 50%; margin-top: 50px;"/>
+        <img src="files/pes.webp" alt="" style="width: 50%; margin-top: 50px;"/>
         <p style="font-size: 30px; font-weight: normal;">Z.</p>
         <p style="font-size: 18px;">táborový pes  &#128578;, prvý tábor absolvovala ako päťmesačná</p>
     </div>

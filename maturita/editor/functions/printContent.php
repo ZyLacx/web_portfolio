@@ -29,7 +29,7 @@ class printContent {
         // Dá do premenných zoznam files ktoré sú v súboroch /video a /img
         if(strpos($type, "articles") === false){
             if(strpos($type, "video") === false){
-                $dirPath = "../files/$type/thumbnails";
+                $dirPath = "../files/$type";
             }
             else{
                 $dirPath = "../files/$type";
@@ -340,7 +340,7 @@ function loadFooterTrash($type){
         foreach($this->displayedFiles[$_SESSION["pageNumber"]-1] as $file){
             echo '<tr class="table-row">';
             echo '<td><input type="checkbox" name="names[]" value="'. $file .'"></td>';
-            echo '<td align="center"><img class="table-img" src="../files/'.$type.'/thumbnails/'.$file.'" alt=""></td>';
+            echo '<td align="center"><img class="table-img" src="../files/'.$type.'/'.$file.'" alt=""></td>';
             echo '<td align="center" class="img-name">'. $file .'</td>';
             echo '</tr>';
         }

@@ -393,7 +393,7 @@ function removeImg(){
 function selectImage(name){
 	hideWindow();
 	name = name.replace(/ /gi, "_");
-	let path = "../files/img/thumbnails/"+name;
+	let path = "../files/img/".name;
 	if($(".choose-img-btn").text() == "Vybrať obrázok"){
 		let img = "<div><img id='chosen-img' src="+path+"><div class='remove' onclick='removeImg()'><i class='fas fa-times'></i></div></div>";
 		$("#chosen-img-div").append(img);

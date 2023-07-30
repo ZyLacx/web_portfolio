@@ -114,7 +114,7 @@ class UploadCheck {
 
     function image_resize($file, $ext, $w){
         $old_file = $this->path.$file;
-        $new_file = $this->path."thumbnails/".$file;
+        $new_file = $this->path . $file;
 
         list($width, $height) = getimagesize($old_file);
         $ratio = $width / $height;
@@ -128,13 +128,13 @@ class UploadCheck {
             $transparency = imagecolorallocatealpha($dst, 255, 255, 255, 127);
             imagefilledrectangle($dst, 0, 0, $width, $height, $transparency);
             imagecopyresampled($dst, $src, 0, 0, 0, 0, $w, $h, $width, $height);
-            imagepng($dst, $new_file);
+            imagewebp($dst, $new_file);
         }
         else{
             $src = imagecreatefromjpeg($old_file);
             $dst = imagecreatetruecolor($w, $h);
             imagecopyresampled($dst, $src, 0, 0, 0, 0, $w, $h, $width, $height);
-            imagejpeg($dst, $new_file);
+            imagewebp($dst, $new_file);
         }
 
         imagedestroy($src);

@@ -29,7 +29,7 @@ $row = mysqli_fetch_assoc($result);
 
         echo "<div id='modalNavigation'>";
         foreach($img_array as $i => $img){
-            echo "<img class='demo' src='files/img/thumbnails/$img' onclick='currentSlide($i)'>";
+            echo "<img class='demo' src='files/img/$img' onclick='currentSlide($i)'>";
             if($i > 2){
             break;
             }

@@ -19,7 +19,7 @@ else{
                         <input style="margin-left: 15px;" '.$multiple.' type="file" name="files[]" id="uploadFile" accept="image/png, image/jpeg">
                         <button onclick="uploadImg('.$gallery.')" id="img-upload">Nahrať na server</button>';
 	
-		$dirPath = "../../files/img/thumbnails";
+		$dirPath = "../../files/img";
        	$imgFiles = scandir($dirPath);
         $imgFiles = array_slice($imgFiles, 2);
 
@@ -27,7 +27,7 @@ else{
         foreach ($imgFiles as $image) { // po kliknutí na <a> sa zapne javascript do ktorého sa dá názov obrázka a ten obrázok dá do URL v CKEditore
             echo "<div class='thumb-div'>
                 <a href='javascript:selectImage(\"$image\", $gallery)'> 
-                    <img src='../../files/img/thumbnails/$image' class='thumbnail'  id='thumbnail'>
+                    <img src='../../files/img/$image' class='thumbnail'  id='thumbnail'>
                 </a>
             </div>";
         }

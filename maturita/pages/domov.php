@@ -98,7 +98,7 @@ function print_post_left($postData){
         <a href='?id=".$postData["id"]."'>
             <div class='side-layout-div'>
                 <div class='thumb-side thumb-left'>
-                    <img src='files/img/thumbnails/".$postData['thumbnail']."'>
+                    <img src='files/img/".$postData['thumbnail']."'>
                 </div>
                 <div class='side-layout-text'>
                     <h1>".$postData["title"]."</h1>
@@ -119,7 +119,7 @@ function print_post_right($postData){
                     <p>$description</p>
                 </div>
                 <div class='thumb-side thumb-right'>
-                    <img src='files/img/thumbnails/".$postData['thumbnail']."'>
+                    <img src='files/img/".$postData['thumbnail']."'>
                 </div>
             </div>
         </a>
@@ -129,7 +129,7 @@ function print_post_right($postData){
 function print_post_fancyL($postData){
     $description = getDescription($postData);
     echo "<div class='post-div'>
-        <img src='files/img/thumbnails/".$postData['thumbnail']."' class='thumb-fancyL thumb-fancy'>
+        <img src='files/img/".$postData['thumbnail']."' class='thumb-fancyL thumb-fancy'>
         <a href='?id=".$postData["id"]."'>
             <h1>".$postData["title"]."</h1>
             <p>$description</p>
@@ -140,7 +140,7 @@ function print_post_fancyL($postData){
 function print_post_fancyR($postData){
     $description = getDescription($postData);
     echo "<div class='post-div'>
-        <img src='files/img/thumbnails/".$postData['thumbnail']."' class='thumb-fancyR thumb-fancy'>
+        <img src='files/img/".$postData['thumbnail']."' class='thumb-fancyR thumb-fancy'>
         <a href='?id=".$postData["id"]."'>
             <h1>".$postData["title"]."</h1>
             <p>$description</p>

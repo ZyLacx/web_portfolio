@@ -76,7 +76,7 @@ if(isset($_POST["submit"])){
         }
     }
     else{
-        $dirPath = "../../files/img/thumbnails";
+        $dirPath = "../../files/img";
         $imgFiles = scandir($dirPath);
         $imgFiles = array_slice($imgFiles, 2);
         echo '<div><h1 style="margin-left: 15px;">Alebo zvoľte z existujúcich</h1>';

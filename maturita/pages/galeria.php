@@ -21,12 +21,12 @@ if(isset($_GET["id"])){
                     <noscript>
                         <a href='files/img/$img' target='_blank'>
                             <div class='item-content'>
-                                <img src='files/img/thumbnails/$img'>
+                                <img src='files/img/$img'>
                             </div>
                         </a>
                     </noscript>
                     <script>
-                        document.write(`<div class='item-content' style='cursor: pointer;' title='Otvoriť na celú obrazovku' onclick='openModal($index);'><img src='files/img/thumbnails/$img' ></div>`)
+                        document.write(`<div class='item-content' style='cursor: pointer;' title='Otvoriť na celú obrazovku' onclick='openModal($index);'><img src='files/img/$img' ></div>`)
                     </script>
                 </div>";
             }
@@ -52,7 +52,7 @@ if(isset($_GET["id"])){
     
         echo "<div id='modalNavigation'>";
         foreach($images as $i => $img){
-            echo "<img class='demo' src='files/img/thumbnails/$img[0]' onclick='currentSlide($i)'>";
+            echo "<img class='demo' src='files/img/$img[0]' onclick='currentSlide($i)'>";
         }
         echo "</div>";
     
@@ -68,7 +68,7 @@ else{
         echo "<div class='item'>
                 <a href='?stranka=galeria&id=".$data["id"]."'>
                     <div>
-                        <img src='files/img/thumbnails/".$data["img"]."'>
+                        <img src='files/img/".$data["img"]."'>
                     </div>
                     <p>".$data["title"]."</p>
                 </a>

@@ -31,13 +31,13 @@ if(!defined("AllowAccess")){
             </div>
         </div>
         <div class="header-bg">
-            <a href="index.php?stranka=domov"><img src="files/logo-biela.png" alt="logo" class="logo"></a>
+            <a href="index.php?stranka=domov"><img src="files/logo-biela.webp" alt="logo" class="logo"></a>
         </div>
     </header>
     <nav id='navigation'>
         <div class="menu-bg"> 
             <input type="checkbox" id="check">
-            <label for="check" class="menubtn"><img src="files/menu.png"></label>
+            <label for="check" class="menubtn"><img src="files/menu.webp"></label>
        
         <ul class="nav-links">
             <li class="nav-link">

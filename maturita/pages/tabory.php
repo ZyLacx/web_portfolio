@@ -40,63 +40,63 @@ else{
 <div class="flex">
 	<div class="links">
 		<a href="?stranka=tabory&tabor=jar" >
-			<img src="files/jar.png" alt="" class="linksImg">
+			<img src="files/jar.webp" alt="" class="linksImg">
 			<p >Vítanie jari</p>
 			<!--<p class="linksPopis"></p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=leto" >
-			<img src="files/leto.png" alt="" class="linksImg">
+			<img src="files/leto.webp" alt="" class="linksImg">
 			<p >Letná škola</p>
 			<!--<p class="linksPopis"></p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=chlieb" >
-			<img src="files/chlieb.png" alt="" class="linksImg">
+			<img src="files/chlieb.webp" alt="" class="linksImg">
 			<p >Chlebový víkend</p>
 			<!--<p class="linksPopis">Chlieb náš každodenný...</p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=pizza" >
-			<img src="files/pizza.png" alt="" class="linksImg">
+			<img src="files/pizza.webp" alt="" class="linksImg">
 			<p >Pizza víkend</p>
 			<!--<p class="linksPopis"></p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=jablko" >
-			<img src="files/jablko.png" alt="" class="linksImg">
+			<img src="files/jablko.webp" alt="" class="linksImg">
 			<p >Jablkový víkend</p>
 			<!--<p class="linksPopis">Jedno jablko denne a lekár si k vám nenájde cestu</p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=parohy" >
-			<img src="files/parohy.png" alt="" class="linksImg">
+			<img src="files/parohy.webp" alt="" class="linksImg">
 			<p >Hľadanie parohov</p>
 			<!--<p class="linksPopis">Prechádzky lesmi prinášajú veľa pokladov</p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=karate" >
-			<img src="files/karate.png" alt="" class="linksImg">
+			<img src="files/karate.webp" alt="" class="linksImg">
 			<p >Karate sústredenia</p>
 			<!--<p class="linksPopis"></p>!-->
 		</a>
 	</div>
 	<div class="links">
 		<a href="?stranka=tabory&tabor=mladez" >
-			<img src="files/mladez.png" alt="" class="linksImg">
+			<img src="files/mladez.webp" alt="" class="linksImg">
 			<p >Mládežnícky víkend</p>
 			<!--<p class="linksPopis"></p>!-->
 		</a>
 	</div>
 	<div class="links last">
 			<a href="?stranka=tabory&tabor=vianoce">
-				<img src="files/vianoce2.png" alt="" class="linksImg">
+				<img src="files/vianoce2.webp" alt="" class="linksImg">
 				<p>Vianoce</p>
 				<!--<p class="linksPopis"></p>!-->
 			</a>

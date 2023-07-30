@@ -8,13 +8,13 @@ if(!defined("AllowAccess")){
     <div>
         <h1 style="font-size: 2.5em;">Karate sústredenia CMK</h1>
         <p>Zdokonaľovanie techník, zápasu a príprava na súťaže</p>
-        <img style="width: 65%; margin: 0 auto;" src="files/karate.png">
+        <img style="width: 65%; margin: 0 auto;" src="files/karate.webp">
     </div>
     <div>
         <h1>Galérie</h1>
         <a href='?stranka=galeria&id=4'>
             <div style="width: 100%; display: flex; justify-content: center;">
-                <img style="width: 250px;" src='files/img/korytnacka v2.jpg'>
+                <img style="width: 250px;" src='files/img/korytnacka v2.webp'>
             </div>
         </a>
     </div>
