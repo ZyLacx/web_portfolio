@@ -1,6 +1,6 @@
 This is my web portfolio from high school.
 
-## Maturita (unavailable for now):  
+## [Maturita](https://zylacx.djkato.net/web_portfolio/maturita/index.php):  
 
 
 Maturita project I made for my class teacher.
@@ -10,7 +10,7 @@ I tried to create my own system for uploading files, creating posts and gallerie
 
 
 
-## [RP](https://zylacx.github.io/web_portfolio/rp/):  
+## [RP](https://zylacx.djkato.net/web_portfolio/rp/index.html):  
 
 
 One of the first websites that I made on my own.
